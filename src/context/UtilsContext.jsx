@@ -2,9 +2,9 @@ import { useContext, useState, createContext } from "react";
 
 const UtilsContext = createContext(null);
 
-export const UtilsContextProvider = ({ Children }) => {
+export const UtilsContextProvider = ({ children }) => {
   const [isSidebar, setIsSidebar] = useState(false);
-  const [MobileShow, setMobileShow] = useState(false);
+  const [mobileShow, setMobileShow] = useState(false);
 
   return (
     <UtilsContext.Provider
@@ -16,7 +16,7 @@ export const UtilsContextProvider = ({ Children }) => {
 };
 
 export const useUtils = () => {
-  const UtilsContext = useContext(UtilsContext);
+  const utilsContext = useContext(UtilsContext);
 
   if (!utilsContext) return null;
 

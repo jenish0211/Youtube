@@ -34,7 +34,7 @@ function Navbar() {
   };
 
   const handleSidebar = () => {
-    if (window.innerWidth <= 1280) {
+    if (window.innerWidth <= 1200) {
       setIsSidebar(!isSidebar);
       setMobileShow(!mobileShow);
     }
@@ -63,11 +63,11 @@ function Navbar() {
           >
             <CiSearch size={"24px"} />
           </button>
+          <IoMdMic
+            size={"42px"}
+            className="ml-3 border border-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-200 duration-200"
+          />
         </div>
-        <IoMdMic
-          size={"42px"}
-          className="ml-3 border border-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-200 duration-200"
-        />
       </div>
     );
   }
