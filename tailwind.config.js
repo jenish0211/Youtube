@@ -7,5 +7,5 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require("tailwind-scrollbar")],
+  plugins: [import("tailwind-scrollbar")],
 }
